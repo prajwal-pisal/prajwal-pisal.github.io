@@ -121,7 +121,11 @@ const Navbar = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="fixed inset-0 bg-gradient-to-br from-blue-600/80 to-purple-600/80 backdrop-blur-md md:hidden z-40"
+              className={`fixed inset-0 md:hidden z-40 ${
+                isScrolled
+                  ? 'bg-white/80 backdrop-blur-md'
+                  : 'bg-gradient-to-r from-blue-600/80 to-purple-600/80 backdrop-blur-md'
+              }`}
               style={{ top: '4rem', height: 'calc(100vh - 4rem)' }}
             >
               <div className="px-4 pt-4 pb-3 space-y-1 h-full">
@@ -131,8 +135,12 @@ const Navbar = () => {
                     to={item.path}
                     className={`block px-4 py-3 rounded-lg text-lg font-medium transition-all duration-300 ${
                       location.pathname === item.path
-                        ? 'bg-white/20 text-white'
-                        : 'text-white/90 hover:bg-white/20 hover:text-white'
+                        ? isScrolled
+                          ? 'bg-blue-600/10 text-blue-600'
+                          : 'bg-white/20 text-white'
+                        : isScrolled
+                          ? 'text-gray-600 hover:bg-blue-600/10 hover:text-blue-600'
+                          : 'text-white/90 hover:bg-white/20 hover:text-white'
                     }`}
                   >
                     {item.label}
