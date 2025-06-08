@@ -117,21 +117,22 @@ const Navbar = () => {
         <AnimatePresence>
           {isMobileMenuOpen && (
             <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="md:hidden"
+              className="fixed inset-0 bg-gradient-to-br from-blue-600/95 to-purple-600/95 backdrop-blur-md md:hidden"
+              style={{ top: '4rem' }} // Position below the navbar
             >
-              <div className="px-2 pt-2 pb-3 space-y-1 bg-white/95 backdrop-blur-md rounded-lg mt-2 shadow-lg">
+              <div className="px-4 pt-4 pb-3 space-y-1 h-full">
                 {navItems.map((item) => (
                   <Link
                     key={item.path}
                     to={item.path}
-                    className={`block px-3 py-2 rounded-md text-base font-medium ${
+                    className={`block px-4 py-3 rounded-lg text-lg font-medium transition-all duration-300 ${
                       location.pathname === item.path
-                        ? 'bg-blue-600/10 text-blue-600'
-                        : 'text-gray-600 hover:bg-blue-600/10 hover:text-blue-600'
+                        ? 'bg-white/20 text-white'
+                        : 'text-white/90 hover:bg-white/20 hover:text-white'
                     }`}
                   >
                     {item.label}
