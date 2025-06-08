@@ -1,16 +1,15 @@
 {
   "short_name": "Prajwal Pisal",
-  "name": "Prajwal Pisal - PhD Researcher",
+  "name": "Prajwal Pisal - Software Engineer and Researcher",
   "icons": [
     {
-      "src": "favicon.svg",
-      "sizes": "32x32",
-      "type": "image/svg+xml",
-      "purpose": "any"
+      "src": "favicon.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/png"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#2563EB",
+  "theme_color": "#000000",
   "background_color": "#ffffff"
 }
