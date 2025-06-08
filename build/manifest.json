@@ -3,19 +3,13 @@
   "name": "Prajwal Pisal - PhD Researcher",
   "icons": [
     {
-      "src": "favicon.png",
+      "src": "/prajwal-pisal.github.io/favicon.svg",
       "sizes": "32x32",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "favicon.png",
-      "sizes": "16x16",
-      "type": "image/png",
+      "type": "image/svg+xml",
       "purpose": "any"
     }
   ],
-  "start_url": ".",
+  "start_url": "/prajwal-pisal.github.io/",
   "display": "standalone",
   "theme_color": "#2563EB",
   "background_color": "#ffffff"
