@@ -36,8 +36,8 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/80 backdrop-blur-md shadow-lg'
-          : 'bg-gradient-to-r from-blue-600/80 to-purple-600/80 backdrop-blur-md'
+          ? 'bg-white/80 backdrop-blur-[50px] shadow-lg'
+          : 'bg-gradient-to-r from-blue-600/80 to-purple-600/80 backdrop-blur-[50px]'
       }`}
     >
       <div className="max-w-[2000px] mx-auto px-8 md:px-16 lg:px-24">
@@ -123,8 +123,8 @@ const Navbar = () => {
               transition={{ duration: 0.2 }}
               className={`fixed inset-0 md:hidden z-40 ${
                 isScrolled
-                  ? 'bg-white/80 backdrop-blur-md'
-                  : 'bg-gradient-to-r from-blue-600/80 to-purple-600/80 backdrop-blur-md'
+                  ? 'bg-white/80 backdrop-blur-[50px]'
+                  : 'bg-gradient-to-r from-blue-600/80 to-purple-600/80 backdrop-blur-[50px]'
               }`}
               style={{ top: '4rem', height: 'calc(100vh - 4rem)' }}
             >
