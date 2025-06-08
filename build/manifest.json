@@ -7,6 +7,12 @@
       "sizes": "32x32",
       "type": "image/png",
       "purpose": "any"
+    },
+    {
+      "src": "favicon.png",
+      "sizes": "16x16",
+      "type": "image/png",
+      "purpose": "any"
     }
   ],
   "start_url": ".",
