@@ -36,8 +36,8 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-lg'
-          : 'bg-gradient-to-r from-blue-600/95 to-purple-600/95 backdrop-blur-sm'
+          ? 'bg-white/80 backdrop-blur-md shadow-lg'
+          : 'bg-gradient-to-r from-blue-600/80 to-purple-600/80 backdrop-blur-md'
       }`}
     >
       <div className="max-w-[2000px] mx-auto px-8 md:px-16 lg:px-24">
