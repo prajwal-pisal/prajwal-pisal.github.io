@@ -121,8 +121,8 @@ const Navbar = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="fixed inset-0 bg-gradient-to-br from-blue-600/95 to-purple-600/95 backdrop-blur-md md:hidden z-40"
-              style={{ marginTop: '4rem' }}
+              className="fixed inset-0 bg-gradient-to-br from-blue-600/80 to-purple-600/80 backdrop-blur-md md:hidden z-40"
+              style={{ top: '4rem', height: 'calc(100vh - 4rem)' }}
             >
               <div className="px-4 pt-4 pb-3 space-y-1 h-full">
                 {navItems.map((item) => (
