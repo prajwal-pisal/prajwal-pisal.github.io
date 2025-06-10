@@ -59,6 +59,7 @@ const Research = () => {
                   </p>
                   <div className="mt-4 flex flex-wrap gap-2">
                     <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">CO₂ Conversion</span>
+                    <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Database Creation</span>
                     <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Machine Learning</span>
                     <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Catalysis</span>
                   </div>
@@ -82,7 +83,7 @@ const Research = () => {
                     The project utilizes models from the Open Catalyst Project led by Meta.
                   </p>
                   <div className="mt-4 flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Open Source</span>
+                    <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Open Catalyst Project</span>
                     <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">High-Throughput</span>
                     <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Machine Learning</span>
                     <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">HPC</span>
